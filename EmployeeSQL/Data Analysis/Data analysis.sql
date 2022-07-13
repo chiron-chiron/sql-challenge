@@ -36,6 +36,7 @@ WHERE "Employees".emp_title = 'm0001';
 
 
 
+
 -- 4. List the department of each employee with the following information: 
 -- employee number, 
 -- last name, 
@@ -90,3 +91,11 @@ SELECT "Employees".last_name, COUNT("Employees".last_name) AS "Occurances"
 FROM "Employees"
 GROUP BY "Employees".last_name
 ORDER BY "Occurances" DESC;
+
+
+
+-- 10. Nice gag
+SELECT *
+FROM "Employees"
+WHERE "Employees".emp_no = '499942';
+-- April Foolsday, born 1963, hired at age 34 as a Technique Leader
